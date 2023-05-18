@@ -6,10 +6,19 @@
     */
 
     //ENTRADA
+    let num1 = prompt("Informe um numero")
+    let num2 = prompt("Informe outro numero")
 
     //PROCESSAMENTO
-
-    //SAÍDA
-
-    
+    if (num1 == num2) {
+        alert(`Informe doios numeros diferentes`)
+    }
+    else {
+        const num3 = num1
+        num1 = num2
+        num2 = num3
+        //SAIDA
+        alert(`O numero ${num1} virou o numero ${num2}`)
+        alert(`E o numero ${num2} virou o numero ${num1}`)
+    }
 </script>

@@ -5,10 +5,32 @@
     */
 
     //ENTRADA
+    const num1 = Number(prompt("Informe um numero inteiro"))
+    const num2 = Number(prompt("Informe outro numero inteiro"))
+    const num3 = Number(prompt("Informe outro numero inteiro"))
 
-    
     //PROCESSAMENTO
-    
+    if (num1 == num2 && num2 == num3 && num3 == num1) {
+        alert(`Infome numeros diferentes`)
+    }
     //SAÍDA
-    
+    else if (num1 > num3 && num1 > num2 && num3 > num2) {
+        alert(`Forma decrescente:${num1}, ${num3}, ${num2}`)
+    }
+    else if (num2 > num3 && num2 > num1 && num3 > num1) {
+        alert(`Forma decrescente:${num2}, ${num3}, ${num1}`)
+    }
+    else if (num3 > num2 && num3 > num1 && num2 > num1) {
+        alert(`Forma decrescente:${num3}, ${num2}, ${num1}`)
+    }
+    else if (num1 > num2 && num1 > num3 && num2 > num3) {
+        alert(`Forma decrescente:${num1}, ${num2}, ${num3}`)
+    }
+    else if (num3 > num2 && num3 > num1 && num1 > num2) {
+        alert(`Forma decrescente:${num3}, ${num1}, ${num2}`)
+    }
+    else if (num2 > num3 && num2 > num1 && num1 > num3) {
+        alert(`Forma decrescente:${num2}, ${num1}, ${num3}`)
+    }
+
 </script>
