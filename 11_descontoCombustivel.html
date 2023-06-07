@@ -14,9 +14,21 @@
     */
 
     //ENTRADA
-
+    const tipo = prompt ("Que tipo de combustivel vc deseja colocar? A-Alcool; G-Gasolina")
+    const quantidade = Number (prompt("Quantos litros vc deseja abastecer? Responda em litros"))
+    let preco = 0
+    let desconto = 0
 
     //PROCESSAMENTO
+    if (tipo == "A" ){
+        if (quantidade <= 20){
+            desconto = 0.3
+        }
+        if (quantidade > 20){
+            desconto = 0.5
+        }
+        let resultado = quantidade * preco / desconto
+    }
 
     
     //SAÍDA
