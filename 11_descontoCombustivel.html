@@ -14,36 +14,36 @@
     */
 
     //ENTRADA
-    const tipo = prompt ("Que tipo de combustivel vc deseja colocar? A-Alcool; G-Gasolina").toUpperCase()
-    const quantidade = Number (prompt("Quantos litros vc deseja abastecer? Responda em litros"))
+    const tipo = prompt("Que tipo de combustivel vc deseja colocar? A-Alcool; G-Gasolina").toUpperCase()
+    const quantidade = Number(prompt("Quantos litros vc deseja abastecer? Responda em litros"))
     let preco = 0
     let desconto = 0
 
     //PROCESSAMENTO
-    if (tipo == "A" ){
-        if (quantidade <= 20){
+    if (tipo == "A") {
+        if (quantidade <= 20) {
             desconto = 0.3
         }
-        if (quantidade > 20){
+        if (quantidade > 20) {
             desconto = 0.5
         }
         let preco = 6.10
 
         let resultado = quantidade * preco * desconto
-        alert (`Valor a ser pago sera de: ${resultado.toFixed(2)}`)
+        alert(`Valor a ser pago sera de: ${resultado.toFixed(2)}`)
     }
 
-    if (tipo == "G" ){
-        if (quantidade <= 20){
+    if (tipo == "G") {
+        if (quantidade <= 20) {
             desconto = 0.4
         }
-        if (quantidade > 20){
+        if (quantidade > 20) {
             desconto = 0.6
         }
         let preco = 6.50
 
         let resultado = quantidade * preco * desconto
-        alert (`Valor a ser pago sera de: R$${resultado.toFixed(2)}`)
+        alert(`Valor a ser pago sera de: R$${resultado.toFixed(2)}`)
     }
 
     //SAÍDA

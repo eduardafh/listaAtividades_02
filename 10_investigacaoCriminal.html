@@ -11,27 +11,27 @@
     */
 
     //ENTRADA
-    const perg1 = prompt("Telefonou para a vítima? Responda com S ou N!").toLowerCase();
-    const perg2 = prompt("Esteve no local do crime? Responda com S ou N!").toLowerCase();
-    const perg3 = prompt("Mora perto da vítima? Responda com S ou N!").toLowerCase();
-    const perg4 = prompt("Devia para a vítima? Responda com S ou N!").toLowerCase();
-    const perg5 = prompt("Já trabalhou com a vítima? Responda com S ou N!").toLowerCase();
+    const pergunta1 = prompt("Telefonou para a vítima? Responda com S-Sim ou N-Nao").toLowerCase();
+    const pergunta2 = prompt("Esteve no local do crime? Responda com S-Sim ou N-Nao").toLowerCase();
+    const pergunta3 = prompt("Mora perto da vítima? Responda com S-Sim ou N-Nao").toLowerCase();
+    const pergunta4 = prompt("Devia para a vítima? Responda com S-Sim ou N-Nao").toLowerCase();
+    const pergunta5 = prompt("Já trabalhou com a vítima? Responda com S-Sim ou N-Nao").toLowerCase();
 
     // Processamento
     let resposta = 0 
-    if (perg1 == "s") {
+    if (pergunta1 == "s") {
         resposta == resposta++
     }
-    if (perg2 == "s") {
+    if (pergunta2 == "s") {
         resposta == resposta++;
     }
-    if (perg3 == "s") {
+    if (pergunta3 == "s") {
         resposta == resposta++;
     }
-    if (perg4 == "s") {
+    if (pergunta4 == "s") {
         resposta == resposta++; 
     }
-    if (perg5 == "s") {
+    if (pergunta5 == "s") {
         resposta == resposta++;
     }
     if (resposta == 2) {
