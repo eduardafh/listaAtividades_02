@@ -7,5 +7,23 @@
     // - cães grandes: fator 7.
 
     // Entrada
+    const idadeHum = Number(prompt("Informe a idade do seu cachorro"))
+    const porte = prompt("Infome o porte do seu cachorro. P = Pequeno; M = Medio; G= Grande.").toUpperCase()
+    let idadeAnim = 0
+
+    if (porte == "P"){
+        let idadeAnim = idadeHum * 5
+        alert (`Seu cachorro tem ${idadeAnim} anos`)
+    }
+    if (porte == "M"){
+        let idadeAnim = idadeHum * 6
+        alert (`Seu cachorro tem ${idadeAnim} anos`)
+    }
+    if (porte == "G"){
+        let idadeAnim = idadeHum * 7
+        alert (`Seu cachorro tem ${idadeAnim} anos`)
+    }
+
+
     
 </script>
