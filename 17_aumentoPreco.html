@@ -7,14 +7,11 @@
         //- acima de 1500: aumento de 5 %
     
     // Entrada
-    const produto = Number (prompt("Qual o preco do produto?"))
+    const produto = Number(prompt("Qual o preco do produto?"))
     let preco = 0
 
     // Processamento
-    if (isNaN (preco)){
-        alert(`Valor invalido`)
-    }
-    else if (preco <= 280){
+    if (preco <= 280){
         let preco = (produto * 0.20) + produto
         alert(`Valor final: ${preco}`)
     }
@@ -29,5 +26,8 @@
     else if (preco > 1500){
         let preco = (produto * 0.5) + produto
         alert(`Valor final: ${preco}`)
+    }
+    else {
+        alert(`Informe apenas numeros`)
     }
 </script>
