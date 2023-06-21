@@ -11,29 +11,22 @@
     */
 
     //ENTRADA
-    const pergunta1 = prompt("Telefonou para a vítima? Responda com S-Sim ou N-Nao").toLowerCase();
-    const pergunta2 = prompt("Esteve no local do crime? Responda com S-Sim ou N-Nao").toLowerCase();
-    const pergunta3 = prompt("Mora perto da vítima? Responda com S-Sim ou N-Nao").toLowerCase();
-    const pergunta4 = prompt("Devia para a vítima? Responda com S-Sim ou N-Nao").toLowerCase();
-    const pergunta5 = prompt("Já trabalhou com a vítima? Responda com S-Sim ou N-Nao").toLowerCase();
+    const pergunta1 = prompt("Telefonou para a vítima? Responda com S-Sim ou N-Nao").toLowerCase().trim();
+    const pergunta2 = prompt("Esteve no local do crime? Responda com S-Sim ou N-Nao").toLowerCase().trim();
+    const pergunta3 = prompt("Mora perto da vítima? Responda com S-Sim ou N-Nao").toLowerCase().trim();
+    const pergunta4 = prompt("Devia para a vítima? Responda com S-Sim ou N-Nao").toLowerCase().trim();
+    const pergunta5 = prompt("Já trabalhou com a vítima? Responda com S-Sim ou N-Nao").toLowerCase().trim();
 
     // Processamento
-    let resposta = 0 
-    if (pergunta1 == "s") {
-        resposta == resposta++
-    }
-    if (pergunta2 == "s") {
-        resposta == resposta++;
-    }
-    if (pergunta3 == "s") {
-        resposta == resposta++;
-    }
-    if (pergunta4 == "s") {
-        resposta == resposta++; 
-    }
-    if (pergunta5 == "s") {
-        resposta == resposta++;
-    }
+    let resposta = 0
+    if (pergunta1 == "s") resposta == resposta + 1
+    if (pergunta2 == "s") resposta == resposta + 1;
+    if (pergunta3 == "s") resposta == resposta + 1
+    if (pergunta4 == "s") resposta == resposta + 1;
+    if (pergunta5 == "s") resposta == resposta + 1;
+
+    //SAIDA
+
     if (resposta == 2) {
         alert(`Suspeito`);
     }
@@ -41,7 +34,7 @@
         alert(`Cúmplice`);
     }
     else if (resposta == 5) {
-        alert(`Assasino`);
+        alert(`Assassino`);
     }
     else {
         alert(`Inocente`);
